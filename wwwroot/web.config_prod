@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+	<system.webServer>
+	
+	<httpProtocol>
+		<customHeaders>
+			<add name="X-Frame-Options" value="SAMEORIGIN" />
+		</customHeaders>
+	</httpProtocol>
+	
+	<staticContent>
+		<remove fileExtension=".woff" />
+		<mimeMap fileExtension=".woff" mimeType="application/octet-stream" />
+		<remove fileExtension=".woff2" />
+		<mimeMap fileExtension=".woff2" mimeType="application/octet-stream" />
+	</staticContent>
+	
+	<rewrite>
+		<rules>
+			<clear />
+			<rule name="Redirect to https" stopProcessing="true">
+				<match url="(.*)" />
+				<conditions>
+					<add input="{HTTPS}" pattern="off" ignoreCase="true" />
+				</conditions>
+				<action type="Redirect" url="https://{HTTP_HOST}{REQUEST_URI}" redirectType="Permanent" />
+			</rule>
+		</rules>
+	</rewrite>
+	
+	<directoryBrowse enabled="false" />
+	
+	<defaultDocument>
+		<files>
+			<clear />
+			<add value="index.cfm" />
+			<add value="index.html" />
+			<add value="index.htm" />
+			<add value="Default.htm" />
+			<add value="Default.asp" />
+			<add value="index.php" />
+			<add value="Default.aspx" />
+		</files>
+	</defaultDocument>
+	
+		<httpErrors errorMode="DetailedLocalOnly" existingResponse="Auto" />
+		
+	</system.webServer>
+</configuration>
