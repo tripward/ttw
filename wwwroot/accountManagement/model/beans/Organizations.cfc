@@ -74,57 +74,57 @@
 				<div class="form-group"><label for="city">City</label><input type="text" class="form-control" name="city" value="#this.city#" placeholder="Enter city" /></div>
 				<div class="form-group"><label for="state">State</label>
 					<select name="state" class="form-control">
-						<option value="AL">Alabama</option>
-						<option value="AK">Alaska</option>
-						<option value="AZ">Arizona</option>
-						<option value="AR">Arkansas</option>
-						<option value="CA">California</option>
-						<option value="CO">Colorado</option>
-						<option value="CT">Connecticut</option>
-						<option value="DE">Delaware</option>
-						<option value="DC">District Of Columbia</option>
-						<option value="FL">Florida</option>
-						<option value="GA">Georgia</option>
-						<option value="HI">Hawaii</option>
-						<option value="ID">Idaho</option>
-						<option value="IL">Illinois</option>
-						<option value="IN">Indiana</option>
-						<option value="IA">Iowa</option>
-						<option value="KS">Kansas</option>
-						<option value="KY">Kentucky</option>
-						<option value="LA">Louisiana</option>
-						<option value="ME">Maine</option>
-						<option value="MD">Maryland</option>
-						<option value="MA">Massachusetts</option>
-						<option value="MI">Michigan</option>
-						<option value="MN">Minnesota</option>
-						<option value="MS">Mississippi</option>
-						<option value="MO">Missouri</option>
-						<option value="MT">Montana</option>
-						<option value="NE">Nebraska</option>
-						<option value="NV">Nevada</option>
-						<option value="NH">New Hampshire</option>
-						<option value="NJ">New Jersey</option>
-						<option value="NM">New Mexico</option>
-						<option value="NY">New York</option>
-						<option value="NC">North Carolina</option>
-						<option value="ND">North Dakota</option>
-						<option value="OH">Ohio</option>
-						<option value="OK">Oklahoma</option>
-						<option value="OR">Oregon</option>
-						<option value="PA">Pennsylvania</option>
-						<option value="RI">Rhode Island</option>
-						<option value="SC">South Carolina</option>
-						<option value="SD">South Dakota</option>
-						<option value="TN">Tennessee</option>
-						<option value="TX">Texas</option>
-						<option value="UT">Utah</option>
-						<option value="VT">Vermont</option>
-						<option value="VA">Virginia</option>
-						<option value="WA">Washington</option>
-						<option value="WV">West Virginia</option>
-						<option value="WI">Wisconsin</option>
-						<option value="WY">Wyoming</option>
+						<option value="AL"<cfif variables.state IS "AL"> selected="selected"</cfif>>Alabama</option>
+						<option value="AK"<cfif variables.state IS "AK"> selected="selected"</cfif>>Alaska</option>
+						<option value="AZ"<cfif variables.state IS "AZ"> selected="selected"</cfif>>Arizona</option>
+						<option value="AR"<cfif variables.state IS "AR"> selected="selected"</cfif>>Arkansas</option>
+						<option value="CA"<cfif variables.state IS "CA"> selected="selected"</cfif>>California</option>
+						<option value="CO"<cfif variables.state IS "CO"> selected="selected"</cfif>>Colorado</option>
+						<option value="CT"<cfif variables.state IS "CT"> selected="selected"</cfif>>Connecticut</option>
+						<option value="DE"<cfif variables.state IS "DE"> selected="selected"</cfif>>Delaware</option>
+						<option value="DC"<cfif variables.state IS "DC"> selected="selected"</cfif>>District Of Columbia</option>
+						<option value="FL"<cfif variables.state IS "FL"> selected="selected"</cfif>>Florida</option>
+						<option value="GA"<cfif variables.state IS "GA"> selected="selected"</cfif>>Georgia</option>
+						<option value="HI"<cfif variables.state IS "HI"> selected="selected"</cfif>>Hawaii</option>
+						<option value="ID"<cfif variables.state IS "ID"> selected="selected"</cfif>>Idaho</option>
+						<option value="IL"<cfif variables.state IS "IL"> selected="selected"</cfif>>Illinois</option>
+						<option value="IN"<cfif variables.state IS "IN"> selected="selected"</cfif>>Indiana</option>
+						<option value="IA"<cfif variables.state IS "IA"> selected="selected"</cfif>>Iowa</option>
+						<option value="KS"<cfif variables.state IS "KS"> selected="selected"</cfif>>Kansas</option>
+						<option value="KY"<cfif variables.state IS "KY"> selected="selected"</cfif>>Kentucky</option>
+						<option value="LA"<cfif variables.state IS "LA"> selected="selected"</cfif>>Louisiana</option>
+						<option value="ME"<cfif variables.state IS "ME"> selected="selected"</cfif>>Maine</option>
+						<option value="MD"<cfif variables.state IS "MD"> selected="selected"</cfif>>Maryland</option>
+						<option value="MA"<cfif variables.state IS "MA"> selected="selected"</cfif>>Massachusetts</option>
+						<option value="MI"<cfif variables.state IS "MI"> selected="selected"</cfif>>Michigan</option>
+						<option value="MN"<cfif variables.state IS "MN"> selected="selected"</cfif>>Minnesota</option>
+						<option value="MS"<cfif variables.state IS "MS"> selected="selected"</cfif>>Mississippi</option>
+						<option value="MO"<cfif variables.state IS "MO"> selected="selected"</cfif>>Missouri</option>
+						<option value="MT"<cfif variables.state IS "MT"> selected="selected"</cfif>>Montana</option>
+						<option value="NE"<cfif variables.state IS "NE"> selected="selected"</cfif>>Nebraska</option>
+						<option value="NV"<cfif variables.state IS "NV"> selected="selected"</cfif>>Nevada</option>
+						<option value="NH"<cfif variables.state IS "NH"> selected="selected"</cfif>>New Hampshire</option>
+						<option value="NJ"<cfif variables.state IS "NJ"> selected="selected"</cfif>>New Jersey</option>
+						<option value="NM"<cfif variables.state IS "NM"> selected="selected"</cfif>>New Mexico</option>
+						<option value="NY"<cfif variables.state IS "NY"> selected="selected"</cfif>>New York</option>
+						<option value="NC"<cfif variables.state IS "NC"> selected="selected"</cfif>>North Carolina</option>
+						<option value="ND"<cfif variables.state IS "ND"> selected="selected"</cfif>>North Dakota</option>
+						<option value="OH"<cfif variables.state IS "OH"> selected="selected"</cfif>>Ohio</option>
+						<option value="OK"<cfif variables.state IS "OK"> selected="selected"</cfif>>Oklahoma</option>
+						<option value="OR"<cfif variables.state IS "OR"> selected="selected"</cfif>>Oregon</option>
+						<option value="PA"<cfif variables.state IS "PA"> selected="selected"</cfif>>Pennsylvania</option>
+						<option value="RI"<cfif variables.state IS "RI"> selected="selected"</cfif>>Rhode Island</option>
+						<option value="SC"<cfif variables.state IS "SC"> selected="selected"</cfif>>South Carolina</option>
+						<option value="SD"<cfif variables.state IS "SD"> selected="selected"</cfif>>South Dakota</option>
+						<option value="TN"<cfif variables.state IS "TN"> selected="selected"</cfif>>Tennessee</option>
+						<option value="TX"<cfif variables.state IS "TX"> selected="selected"</cfif>>Texas</option>
+						<option value="UT"<cfif variables.state IS "UT"> selected="selected"</cfif>>Utah</option>
+						<option value="VT"<cfif variables.state IS "VT"> selected="selected"</cfif>>Vermont</option>
+						<option value="VA"<cfif variables.state IS "VA"> selected="selected"</cfif>>Virginia</option>
+						<option value="WA"<cfif variables.state IS "WA"> selected="selected"</cfif>>Washington</option>
+						<option value="WV"<cfif variables.state IS "WV"> selected="selected"</cfif>>West Virginia</option>
+						<option value="WI"<cfif variables.state IS "WI"> selected="selected"</cfif>>Wisconsin</option>
+						<option value="WY"<cfif variables.state IS "WY"> selected="selected"</cfif>>Wyoming</option>
 				</select>				
 		
 		
